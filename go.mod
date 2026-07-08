@@ -3,17 +3,19 @@ module github.com/maxbrunsfeld/counterfeiter/v6
 require (
 	github.com/onsi/gomega v1.27.10
 	github.com/sclevine/spec v1.4.0
-	golang.org/x/tools v0.12.0
+	golang.org/x/tools v0.45.0
 )
 
 require (
-	github.com/google/go-cmp v0.5.9 // indirect
-	golang.org/x/mod v0.12.0 // indirect
-	golang.org/x/net v0.14.0 // indirect
-	golang.org/x/sys v0.11.0 // indirect
-	golang.org/x/text v0.12.0 // indirect
+	github.com/google/go-cmp v0.6.0 // indirect
+	golang.org/x/crypto v0.53.0 // indirect
+	golang.org/x/mod v0.36.0 // indirect
+	golang.org/x/net v0.55.0 // indirect
+	golang.org/x/sync v0.21.0 // indirect
+	golang.org/x/sys v0.46.0 // indirect
+	golang.org/x/text v0.38.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-go 1.19
+go 1.25.5

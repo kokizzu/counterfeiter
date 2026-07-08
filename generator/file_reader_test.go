@@ -148,7 +148,7 @@ func cachedReaderCreator(o generator.Opener) generator.FileReader {
 
 func openReturningErr(err string) generator.Opener {
 	return func(_ string) (io.ReadCloser, error) {
-		return nil, fmt.Errorf(err)
+		return nil, fmt.Errorf("%s", err)
 	}
 }
 func openReturningReader(content string) generator.Opener {
@@ -160,7 +160,7 @@ func openReturningFailingReader(err string) generator.Opener {
 	return func(_ string) (io.ReadCloser, error) {
 		r := &erroringReader{
 			reader: ioutil.NopCloser(strings.NewReader("some random file content")),
-			err:    fmt.Errorf(err),
+			err:    fmt.Errorf("%s", err),
 		}
 		return r, nil
 	}
